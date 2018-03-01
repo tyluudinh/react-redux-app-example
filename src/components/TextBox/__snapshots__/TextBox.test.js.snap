@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component TextBox Render correctly 1`] = `
+<TextBox
+  onChange={[Function]}
+  placeholder="My name is"
+  value="Poe"
+>
+  <div
+    className="custom-textbox-wrapper"
+  >
+    <input
+      className="custom-textbox"
+      name={undefined}
+      onChange={[Function]}
+      placeholder="My name is"
+      type="text"
+      value="Poe"
+    />
+  </div>
+</TextBox>
+`;
+
+exports[`Component TextBox Render correctly 2`] = `
+<TextBox
+  className="ucustom-class"
+  onChange={[Function]}
+  reverseTheme={true}
+  type="password"
+  value="Poe"
+  withIcon="lock"
+>
+  <div
+    className="custom-textbox-wrapper with-icon reverse ucustom-class"
+  >
+    <div
+      className="icon-wrapper"
+    >
+      <FaLock
+        className="icon-wrapper__icon"
+      >
+        <IconBase
+          className="icon-wrapper__icon"
+          viewBox="0 0 40 40"
+        >
+          <svg
+            className="icon-wrapper__icon"
+            fill="currentColor"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m14.1 17.1h11.5v-4.2q0-2.4-1.7-4.1t-4-1.7-4.1 1.7-1.7 4.1v4.2z m18.6 2.2v12.8q0 0.9-0.6 1.6t-1.5 0.6h-21.5q-0.8 0-1.5-0.6t-0.6-1.6v-12.8q0-0.9 0.6-1.5t1.5-0.7h0.8v-4.2q0-4.1 2.9-7.1t7.1-2.9 7 2.9 3 7.1v4.2h0.7q0.9 0 1.5 0.7t0.6 1.5z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </FaLock>
+    </div>
+    <input
+      className="custom-textbox"
+      name={undefined}
+      onChange={[Function]}
+      placeholder={undefined}
+      type="password"
+      value="Poe"
+    />
+  </div>
+</TextBox>
+`;

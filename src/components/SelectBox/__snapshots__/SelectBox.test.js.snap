@@ -1,0 +1,266 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component SelectBox To be rendered correctly 1`] = `
+<SelectBox
+  options={
+    Array [
+      Object {
+        "label": "option one",
+        "value": "one",
+      },
+      Object {
+        "label": "option two",
+        "value": "two",
+      },
+      Object {
+        "label": "option three",
+        "value": "three",
+      },
+      Object {
+        "label": "option four",
+        "value": "four",
+      },
+      Object {
+        "label": "all options",
+        "value": "all",
+      },
+    ]
+  }
+  value="one"
+>
+  <Select
+    addLabelText="Add \\"{label}\\"?"
+    arrowRenderer={[Function]}
+    autosize={true}
+    backspaceRemoves={true}
+    backspaceToRemoveMessage="Press backspace to remove {label}"
+    className="custom-select"
+    clearAllText="Clear all"
+    clearRenderer={[Function]}
+    clearValueText="Clear value"
+    clearable={false}
+    closeOnSelect={true}
+    deleteRemoves={true}
+    delimiter=","
+    disabled={false}
+    escapeClearsValue={true}
+    filterOptions={[Function]}
+    ignoreAccents={true}
+    ignoreCase={true}
+    inputProps={Object {}}
+    isLoading={false}
+    joinValues={false}
+    labelKey="label"
+    matchPos="any"
+    matchProp="any"
+    menuBuffer={0}
+    menuRenderer={[Function]}
+    multi={false}
+    name="form-field-name"
+    noResultsText="No results found"
+    onBlurResetsInput={true}
+    onChange={undefined}
+    onCloseResetsInput={true}
+    onSelectResetsInput={true}
+    openOnClick={true}
+    optionComponent={[Function]}
+    options={
+      Array [
+        Object {
+          "label": "option one",
+          "value": "one",
+        },
+        Object {
+          "label": "option two",
+          "value": "two",
+        },
+        Object {
+          "label": "option three",
+          "value": "three",
+        },
+        Object {
+          "label": "option four",
+          "value": "four",
+        },
+        Object {
+          "label": "all options",
+          "value": "all",
+        },
+      ]
+    }
+    pageSize={5}
+    placeholder="Select..."
+    required={false}
+    scrollMenuIntoView={true}
+    searchable={true}
+    simpleValue={false}
+    tabSelectsValue={true}
+    value="one"
+    valueComponent={[Function]}
+    valueKey="value"
+  >
+    <div
+      className="Select custom-select Select--single is-searchable has-value"
+      style={undefined}
+    >
+      <input
+        disabled={false}
+        key="hidden.0"
+        name="form-field-name"
+        type="hidden"
+        value="one"
+      />
+      <div
+        className="Select-control"
+        onKeyDown={[Function]}
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={undefined}
+      >
+        <span
+          className="Select-multi-value-wrapper"
+          id="react-select-2--value"
+        >
+          <Value
+            disabled={false}
+            id="react-select-2--value-item"
+            instancePrefix="react-select-2-"
+            onClick={null}
+            value={
+              Object {
+                "label": "option one",
+                "value": "one",
+              }
+            }
+          >
+            <div
+              className="Select-value"
+              style={undefined}
+              title={undefined}
+            >
+              <span
+                aria-selected="true"
+                className="Select-value-label"
+                id="react-select-2--value-item"
+                role="option"
+              >
+                option one
+              </span>
+            </div>
+          </Value>
+          <AutosizeInput
+            aria-activedescendant="react-select-2--value"
+            aria-describedby={undefined}
+            aria-expanded="false"
+            aria-haspopup="false"
+            aria-label={undefined}
+            aria-labelledby={undefined}
+            aria-owns=""
+            className="Select-input"
+            minWidth="5"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            role="combobox"
+            tabIndex={undefined}
+            value=""
+          >
+            <div
+              className="Select-input"
+              style={
+                Object {
+                  "display": "inline-block",
+                }
+              }
+            >
+              <style
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "input#undefined::-ms-clear {display: none;}",
+                  }
+                }
+              />
+              <input
+                aria-activedescendant="react-select-2--value"
+                aria-describedby={undefined}
+                aria-expanded="false"
+                aria-haspopup="false"
+                aria-label={undefined}
+                aria-labelledby={undefined}
+                aria-owns=""
+                className={undefined}
+                id={undefined}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                required={false}
+                role="combobox"
+                style={
+                  Object {
+                    "boxSizing": "content-box",
+                    "width": "5px",
+                  }
+                }
+                tabIndex={undefined}
+                value=""
+              />
+              <div
+                style={
+                  Object {
+                    "height": 0,
+                    "left": 0,
+                    "overflow": "scroll",
+                    "position": "absolute",
+                    "top": 0,
+                    "visibility": "hidden",
+                    "whiteSpace": "pre",
+                  }
+                }
+              />
+            </div>
+          </AutosizeInput>
+        </span>
+        <span
+          className="Select-arrow-zone"
+          onMouseDown={[Function]}
+        >
+          <span>
+            <FaChevronDown
+              className="custom-select__arrow down"
+            >
+              <IconBase
+                className="custom-select__arrow down"
+                viewBox="0 0 40 40"
+              >
+                <svg
+                  className="custom-select__arrow down"
+                  fill="currentColor"
+                  height="1em"
+                  preserveAspectRatio="xMidYMid meet"
+                  style={
+                    Object {
+                      "color": undefined,
+                      "verticalAlign": "middle",
+                    }
+                  }
+                  viewBox="0 0 40 40"
+                  width="1em"
+                >
+                  <g>
+                    <path
+                      d="m37.6 18l-16.6 16.6q-0.4 0.4-1 0.4t-1-0.4l-16.6-16.6q-0.4-0.4-0.4-1t0.4-1l3.7-3.7q0.5-0.4 1-0.4t1 0.4l11.9 11.9 11.9-11.9q0.4-0.4 1-0.4t1 0.4l3.7 3.7q0.4 0.4 0.4 1t-0.4 1z"
+                    />
+                  </g>
+                </svg>
+              </IconBase>
+            </FaChevronDown>
+          </span>
+        </span>
+      </div>
+    </div>
+  </Select>
+</SelectBox>
+`;

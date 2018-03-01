@@ -1,0 +1,11 @@
+export const TANK_CREATE = 'tank/CREATE';
+export const TANK_CREATE_START = 'tank/CREATE_START';
+export const TANK_CREATE_SUCCESS = 'tank/CREATE_SUCCESS';
+export const TANK_CREATE_FAIL = 'tank/CREATE_FAIL';
+export const TANK_CREATE_CLEAN = 'tank/CREATE_CLEAN';
+export const TANK_CREATE_RESET = 'tank/CREATE_RESET';
+
+export const TANK_CREATE_VALIDATE = 'tank/CREATE_VALIDATE';
+export const TANK_CREATE_VALIDATE_START = 'tank/CREATE_VALIDATE_START';
+export const TANK_CREATE_VALIDATE_FAIL = 'tank/CREATE_VALIDATE_FAIL';
+export const TANK_CREATE_VALIDATE_PASS = 'tank/CREATE_VALIDATE_PASS';

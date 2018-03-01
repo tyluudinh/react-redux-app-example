@@ -1,0 +1,82 @@
+.main-nav {
+  position: 'relative';
+}
+.main-nav__pan {
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 12;
+  box-shadow: 2px 0 2px 1px #898989;
+}
+.main-nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+}
+
+
+.mn-overlay-enter {
+  opacity: 0.01;
+}
+
+.mn-overlay-enter.mn-overlay-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.mn-overlay-leave {
+  opacity: 1;
+}
+
+.mn-overlay-leave.mn-overlay-leave-active {
+  opacity: 0.01;
+  transition: opacity 200ms ease-in;
+}
+
+.mn-pan-enter {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+
+.mn-pan-enter.mn-pan-enter-active {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+  transform: translateX(0);
+}
+
+.mn-pan-leave {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mn-pan-leave.mn-pan-leave-active {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 400ms ease-in-out;
+}
+
+/* Inside menu */
+.main-nav__pan {
+  padding-top: 80px;
+}
+.main-nav__item {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-top: 18px;
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: #454545;
+  }
+  svg {
+    fill: #454545;
+    margin-right: 16px;
+  }
+}

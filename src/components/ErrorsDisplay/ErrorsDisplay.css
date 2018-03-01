@@ -1,0 +1,27 @@
+.errors-display {
+  width: 100%;
+  margin: 8px auto;
+  padding: 12px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.9);
+  &.center {
+    text-align: center;
+  }
+}
+.errors-display--field {
+  padding: 12px 0;
+  background: none;
+  .errors-display__error {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    background-color: #d0011b;
+    color: white;
+  }  
+}
+
+.errors-display__error {
+  color: #d0011b;
+  list-style: none;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,131 @@
+.custom-button {
+  height: 50px;
+  width: auto;
+  padding: 10px;
+  line-height: 30px;
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+
+  /* default green button */
+  background-color: #009247;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  cursor: pointer;
+  position: relative;
+
+  .custom-button__icon {
+    margin-right: 8px;
+  }
+
+  .drop-down-container {
+    width: 100%;
+    height: auto;
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .drop-down-container--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.no-border-radius {
+    border-radius: 0;
+  }
+
+  &.min-padding {
+    width: 100%;
+    @media screen and (min-width: 33.75em) {
+      width: auto;
+      padding: 10px 50px;
+      margin: auto;
+    }
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  // Green button 
+  &.green {
+    border: 1px solid #009247;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.25), 0 4px 6px rgba(0,0,0,0.22);
+    }
+  }
+
+  /* Green reverse buttons */
+  &.green-reverse {
+    color: #009247;
+    background-color: white;
+    border: 1px solid #009247;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover,
+    &:focus {
+      background-color: #009247;
+      color: white;
+      .custom-button__icon{
+        fill: white;
+      }
+    }
+    
+    .custom-button__icon{
+      fill: #009247;
+    }
+  }
+
+  /* Blue reverse buttons */
+  &.blue-reverse {
+    color: #00529c;
+    background-color: white;
+    border: 1px solid #00529c;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover,
+    &:focus {
+      background-color: #00529c;
+      color: white;
+      .custom-button__icon{
+        fill: white;
+      }
+    }
+    .custom-button__icon{
+      fill: #00529c;
+    }
+  }
+
+  /* Red reverse buttons */
+  &.red-reverse {
+    color: #d0011b;
+    background-color: white;
+    border: 1px solid #d0011b;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover,
+    &:focus {
+      background-color: #d0011b;
+      color: white;
+      .custom-button__icon{
+        fill: white;
+      }
+    }
+    .custom-button__icon{
+      fill: #d0011b;
+    }
+  }
+}

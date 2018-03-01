@@ -1,0 +1,10 @@
+.delete-account-pop {
+  padding: 30px;
+  padding-bottom: 40px;
+  .btns-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

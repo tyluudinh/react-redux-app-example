@@ -1,0 +1,12 @@
+.reservation-edit {
+  padding-bottom: 50px;
+  .reservation-edit__form {
+    > .flex-default {
+      > span { min-width: 175px }
+    }
+    .submit-btn { margin-top: 30px }
+  }
+}
+.reservation-edit__submit {
+  margin-top: 30px !important;
+}

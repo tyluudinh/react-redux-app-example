@@ -1,0 +1,5 @@
+.edit-account-pop {
+  padding: 30px;
+  padding-bottom: 40px;
+  label.flex-default > span { min-width: 160px }
+}

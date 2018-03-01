@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Button To be rendered correctly! 1`] = `
+<button
+  className="custom-button green"
+  onClick={[Function]}
+>
+  Confirm
+</button>
+`;
+
+exports[`Component Button To be rendered correctly! 2`] = `
+<button
+  className="custom-button full-width green"
+  onClick={[Function]}
+>
+  Confirm
+</button>
+`;
+
+exports[`Component Button To be rendered correctly! 3`] = `
+<button
+  className="custom-button blue-reverse"
+  onClick={[Function]}
+>
+  Create
+</button>
+`;
+
+exports[`Component Button To be rendered correctly! 4`] = `
+<button
+  className="custom-button no-border-radius green"
+  onClick={[Function]}
+>
+  Add more icon
+</button>
+`;
+
+exports[`Component Button To be rendered correctly! 5`] = `
+<button
+  className="custom-button green"
+  onClick={[Function]}
+>
+  <FaPlus
+    className="custom-button__icon"
+  />
+  Add more icon
+</button>
+`;
+
+exports[`Component Button To be rendered correctly! 6`] = `
+<button
+  className="custom-button green custom-button"
+  onClick={[Function]}
+>
+  Custom Button
+</button>
+`;

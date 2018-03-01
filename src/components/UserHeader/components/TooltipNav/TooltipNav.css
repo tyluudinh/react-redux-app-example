@@ -1,0 +1,72 @@
+.tooltip-nav-container {
+  position: relative;
+}
+.tooltip-nav {
+  position: absolute;
+  right: 0px;
+  top: 105%;
+  background: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.tooltip-nav--active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 21;
+}
+.tooltip-nav__outer {
+  overflow: hidden;
+  width: 180px;
+}
+.tooltip-nav__inner {
+  width: 401px;
+  position: relative;
+  transition: all 0.3s ease;
+  a {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #3d3d3d;
+    display: block;
+    margin: 12px 0;
+    transition: all 0.2s ease-in;
+    &:hover { text-decoration: underline }
+    &.tooltip-nav__back-button {
+      color: #333333;
+      font-weight: bold;
+      font-size: 0.7rem;
+      line-height: 1.3rem;
+    }
+    &.is-disable {
+      pointer-events: none;
+      color: #cecece;
+    }
+  }
+  li {
+    list-style: none;
+  }
+}
+.tooltip-nav__back-icon {
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+.tooltip-nav__inner--sub {
+  transform: translateX(-200px);
+}
+.tooltip-nav__group {
+  width: 200px;
+  float: left;
+}
+.tooltip-nav__sub-group {
+  float: right;
+  width: 200px;
+  display: none
+}
+.tooltip-nav__sub-group--active {
+  display: block;
+}
+.tooltip-nav__list {
+  padding: 4px 18px;
+}

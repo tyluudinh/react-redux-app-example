@@ -1,0 +1,46 @@
+.search-result-wrapper {
+  margin-bottom: 50px;
+}
+.search-result__tabs-selector {
+  padding: 18px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: 'flex-start';
+  .tabs-selector__item {
+    display: inline-block;
+    margin-top: 8px;
+    margin-right: 20px;
+    margi-bottom: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #686868;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    @media screen and (min-width: 33.75em) {
+      margin-right: 30px;
+    }
+  }
+  .tabs-selector__item--active {
+    font-weight: bold;
+    color: #009247;
+    border-bottom: 3px solid #009247;
+  }
+}
+.search-result__tabs-content {
+  .tab-content {
+    display: none;
+  }
+  .tab-content--active {
+    display: block;
+  }
+  .ReactTable .rt-tbody .rt-tr-group {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    &:hover {
+      background: #eeeeee;
+    }
+    &:active {
+      background: #dddddd;
+    }
+  }
+}

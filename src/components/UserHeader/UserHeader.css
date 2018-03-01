@@ -1,0 +1,41 @@
+header.user-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 18px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fafafa;
+}
+.user-header__logo-with-nav {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: flex;
+  flex-direction: row;
+  z-index: 16;
+  @media screen and (min-width: 33.75em) {
+    left: 36px;
+  }
+}
+.header-logo {
+  width: 50px;
+  margin-left: 20px;
+}
+.user-header__burger {
+  cursor: pointer;
+}
+
+.user-header__setting {
+  cursor: pointer;
+  position: relative;
+  height: 30px;
+}
+.user-header__setting-gear {
+  fill: #8f8f8f;
+  user-select: none;
+}
+

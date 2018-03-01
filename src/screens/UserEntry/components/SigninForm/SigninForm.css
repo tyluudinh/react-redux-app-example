@@ -1,0 +1,22 @@
+.signin-form-container {
+  .button {
+    display: block;
+    width: 280px;
+    margin: auto;
+    margin-top: 28px;
+  }
+  .forgot-password {
+    display: block;
+    width: 280px;
+    margin: 20px auto;
+    text-align: right;
+    text-decoration: underline;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+}
+.signin-input {
+  width: 280px;
+  margin:  10px auto 20px;
+}

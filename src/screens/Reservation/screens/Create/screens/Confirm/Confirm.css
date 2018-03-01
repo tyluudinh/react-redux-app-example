@@ -1,0 +1,14 @@
+.reservation-confirm {
+  padding-bottom: 30px;
+  .flex-default {
+    > span { min-width: 175px }
+  }
+}
+
+.reservation-confirm__content {
+  padding: 30px 12px;
+  @media screen and (min-width: 33.75em) {
+    width: 85%;
+    margin: auto;
+  }
+}

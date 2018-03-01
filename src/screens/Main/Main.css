@@ -1,0 +1,27 @@
+.main-screen {
+  .logo {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+  .separate-text {
+    margin: 20px auto;
+    text-align: center;
+  }
+  .create-drop-down {
+    list-style: none;
+    padding: 8px 16px;
+    margin: 0;
+    li { 
+      font-size: 0.8rem; 
+      text-transform: none;
+      margin: 12px 0;
+      text-align: left;
+    }
+    a { 
+      text-decoration: none;
+      color: #3d3d3d;
+      &:hover { text-decoration: underline }
+    }
+  }
+}

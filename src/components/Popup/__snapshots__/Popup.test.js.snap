@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comopnent Popup Render correctly 1`] = `
+<Popup
+  innerClass="custom-class"
+  title="Basic Popup"
+>
+  <div
+    className="popup__wrapper"
+    onClick={[Function]}
+  >
+    <div
+      className="popup__inner custom-class"
+      onClick={[Function]}
+    >
+      <MdClose
+        className="popup__close-button"
+        onClick={[Function]}
+      >
+        <IconBase
+          className="popup__close-button"
+          onClick={[Function]}
+          viewBox="0 0 40 40"
+        >
+          <svg
+            className="popup__close-button"
+            fill="currentColor"
+            height="1em"
+            onClick={[Function]}
+            preserveAspectRatio="xMidYMid meet"
+            style={
+              Object {
+                "color": undefined,
+                "verticalAlign": "middle",
+              }
+            }
+            viewBox="0 0 40 40"
+            width="1em"
+          >
+            <g>
+              <path
+                d="m31.6 10.7l-9.3 9.3 9.3 9.3-2.3 2.3-9.3-9.3-9.3 9.3-2.3-2.3 9.3-9.3-9.3-9.3 2.3-2.3 9.3 9.3 9.3-9.3z"
+              />
+            </g>
+          </svg>
+        </IconBase>
+      </MdClose>
+      <h3
+        className="popup__title"
+      >
+        Basic Popup
+      </h3>
+      <div
+        className="popup__content"
+      >
+        Something inside
+      </div>
+    </div>
+  </div>
+</Popup>
+`;

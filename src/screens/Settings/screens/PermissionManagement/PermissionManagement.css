@@ -1,0 +1,13 @@
+.permission-management {
+  padding-bottom: 80px;
+  
+  .rt-tbody .rt-td {
+    padding: 0;
+    min-height: 50px;
+    line-height: 50px;
+    overflow: visible;
+    &:first-child {
+      padding-left: 12px;
+    }
+  }
+}

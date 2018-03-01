@@ -1,0 +1,18 @@
+.create-admin-user__confirm-pop {
+
+  .confirm-pop__btns-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .confirm-pop__btn {
+    width: 150px;
+    margin: 8px;
+    display: inline-block;
+    
+  }
+
+  label {
+    > span { width: 130px; }
+  }
+}

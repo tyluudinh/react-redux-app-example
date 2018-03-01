@@ -1,0 +1,48 @@
+.reservation-input-field {
+  width: 100%;
+}
+
+.reservation-input-field__add-new {
+  display: inline-block;
+  span { 
+    color: #0091d0; 
+    margin-left: 6px; 
+    font-size: 1rem; 
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.reservation-search-popup__btns {
+  margin-top: 30px;
+}
+
+.reservation-search-popup__inner {
+  padding: 40px 20px;
+  .flex-default {
+    > span {
+      align-self: flex-start;
+      padding-top: 33px;
+      width: 120px;
+    }
+  }
+  .inline-field__col {
+    margin-top: 18px;
+  }
+}
+
+.reservation-input-field__selected-list {
+  list-style: none;
+  padding: 0;
+  li { font-size: 0.8rem; font-weight: lighter; color: #3d3d3d; line-height: 1.5rem; }
+}
+
+.reservation-input-field__add-icon { fill: #0091d0 }
+.reservation-input-field__remove-icon {
+  fill: #d0011b;
+  margin-right: 6px;
+  opacity: 0.6;
+  cursor: pointer;
+
+  &:hover { opacity: 1 }
+}
