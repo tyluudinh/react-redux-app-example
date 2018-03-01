@@ -1,4 +1,3 @@
-# Web application - BNF
 
 ## Prerequisites
 - NodeJS (LTS version)
@@ -8,12 +7,6 @@
   $> npm install -g yarn
 ```
 
-## Installation 
-```
-  $> git clone git@github.com:SpoutEntertainment/BNF-WebApp.git
-  $> cd ./BNF-WebApp
-  $> yarn
-```
 
 ## Commands
 
