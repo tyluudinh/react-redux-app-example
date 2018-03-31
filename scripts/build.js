@@ -1,15 +1,11 @@
 'use strict';
 
-// Do this as the first thing so that any code reading it knows the right env.
-process.env.BABEL_ENV = 'production';
-process.env.NODE_ENV = 'production';
-
-// Makes the script crash on unhandled rejections instead of silently
-// ignoring them. In the future, promise rejections that are not handled will
-// terminate the Node.js process with a non-zero exit code.
 process.on('unhandledRejection', err => {
   throw err;
 });
+
+// Do this as the first thing so that any code reading it knows the right env.
+process.env.BABEL_ENV = 'production';
 
 // Ensure environment variables are read.
 require('../config/env');
@@ -44,12 +40,8 @@ if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
 // This lets us display how much they changed later.
 measureFileSizesBeforeBuild(paths.appBuild)
   .then(previousFileSizes => {
-    // Remove all content but keep the directory so that
-    // if you're in it, you don't end up in Trash
     fs.emptyDirSync(paths.appBuild);
-    // Merge with the public folder
     copyPublicFolder();
-    // Start the webpack build
     return build(previousFileSizes);
   })
   .then(
@@ -70,7 +62,6 @@ measureFileSizesBeforeBuild(paths.appBuild)
       } else {
         console.log(chalk.green('Compiled successfully.\n'));
       }
-
       console.log('File sizes after gzip:\n');
       printFileSizesAfterBuild(
         stats,
@@ -80,7 +71,6 @@ measureFileSizesBeforeBuild(paths.appBuild)
         WARN_AFTER_CHUNK_GZIP_SIZE
       );
       console.log();
-
       const appPackage = require(paths.appPackageJson);
       const publicUrl = paths.publicUrl;
       const publicPath = config.output.publicPath;
@@ -102,8 +92,7 @@ measureFileSizesBeforeBuild(paths.appBuild)
 
 // Create the production build and print the deployment instructions.
 function build(previousFileSizes) {
-  console.log('Creating an optimized production build...');
-
+  console.log(`Creating an optimized ${process.env.NODE_ENV} environment build...`);
   let compiler = webpack(config);
   return new Promise((resolve, reject) => {
     compiler.run((err, stats) => {

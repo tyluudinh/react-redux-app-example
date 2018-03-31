@@ -1,9 +1,20 @@
-import { postPublic, getPrivate  } from './api';
+import {postPrivate, postPublic} from './api';
 
-export const authenticate = (email, password) => {
-  return postPublic('/login', { email, password });
-}
+export const authenticate = (username, password) => {
+  return postPublic('auth/login', {username, password});
+};
 
 export const signout = () => {
-  return getPrivate('/user/me/logout');
-}
+  return postPrivate('users/logout');
+};
+
+export const signInSocial = (accessToken, provider = 'facebook') => {
+  switch (provider) {
+    case 'facebook':
+      return postPublic(`auth/facebook`, {access_token: accessToken});
+    case 'google':
+      return postPublic(`auth/gmail`, {id_token: accessToken});
+    default:
+      break;
+  }
+};

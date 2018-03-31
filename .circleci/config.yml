@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: kriasoft/node-ci
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Node version
+          command: node -v
+      - run:
+          name: Yarn version
+          command: yarn -v
+      - run:
+          name: AWS version
+          command: aws --version
+      - run:
+          name: Set default AWS region into ap-southeast-1
+          command: aws configure set default.region ap-southeast-1
+      - run:
+          name: Set preview.cloudfront to be true
+          command: aws configure set preview.cloudfront true
+      - restore_cache:
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - deploy:
+          name: Build & Deploy To S3
+          command: /bin/bash scripts/deploy.sh

@@ -1,0 +1,8 @@
+.screen-not-found{
+    justify-content: center;
+    display: flex;
+    margin-top: 101px;
+}
+.screen-not-found, .screen-not-found > h2{
+    color: red;
+}

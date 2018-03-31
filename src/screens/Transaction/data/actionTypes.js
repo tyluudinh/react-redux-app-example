@@ -1,0 +1,6 @@
+export const TRANSACTION_LIST_FETCH = 'transaction/LIST_FETCH';
+export const TRANSACTION_LIST_FETCH_START = 'transaction/LIST_FETCH_START';
+export const TRANSACTION_LIST_FETCH_SUCCESS = 'transaction/LIST_FETCH_SUCCESS';
+export const TRANSACTION_LIST_FETCH_FAIL = 'transaction/LIST_FETCH_FAIL';
+
+export const TRANSACTION_LIST_FETCH_CLEAN = 'transaction/LIST_FETCH_CLEAN';

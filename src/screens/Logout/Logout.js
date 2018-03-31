@@ -1,27 +1,28 @@
 import React, { Component }  from 'react';
 
-import LoadingIndicator from 'app/components/LoadingIndicator/LoadingIndicator';
-import ErrorsDisplay from 'app/components/ErrorsDisplay/ErrorsDisplay';
-
+import {
+  Spin,
+} from 'antd';
+import './Logout.css';
 export default class Logout extends Component {
   componentDidMount() {
     this.props.logout(this.props.history);
   }
-
   render() {
     const {
       inProgress,
       errors,
     } = this.props;
     return (
-      <div>
+      <div className="logging-out">
         { errors ? (
-          <div>
-            <ErrorsDisplay center errors={errors} />
+          <div className="child-center">
             <h2>There's error! Please refresh the page to try again!</h2>
           </div>
         ) : null }
-        <LoadingIndicator onDuty={inProgress} text="Logging out" />
+        <div className="logging-out---indicator">
+          <Spin tip="Logging out" spinning={inProgress}/>
+        </div>
       </div>
     )
   }

@@ -1,0 +1,14 @@
+.transaction-status {
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+.paind {
+    background: #4CAF50;
+}
+.pending {
+    background: #ffda1e;
+}
+.failed {
+    background: #ff3535;
+}

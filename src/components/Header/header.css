@@ -1,0 +1,55 @@
+.app-header.navbar {
+    position: relative;
+    flex-direction: row;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    background-color: #101012;
+}
+.app-header.navbar .navbar-brand {
+    display: inline-block;
+    width: 155px;
+    height: 55px;
+    padding: 0.5rem 1rem;
+    margin-right: 0;
+    background-color: #101012;
+    /*background-image: url("../images/cms.png");*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70px auto;
+    /*border-bottom: 1px solid #cfd8dc; */
+}
+.app-header.navbar .navbar-nav {
+    flex-direction: row;
+    align-items: center; }
+.app-header.navbar .nav-item {
+    position: relative;
+    min-width: 50px;
+    margin-right: 30px !important;
+    text-align: center; }
+.app-header.navbar .nav-item button {
+    margin: 0 auto; }
+.app-header.navbar .nav-item .nav-link, .app-header.navbar .nav-item .dropdown-toggle {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    background: 0; }
+.app-header.navbar .nav-item .nav-link .badge, .app-header.navbar .nav-item .dropdown-toggle .badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: 0; }
+.app-header.navbar .nav-item .nav-link > .img-avatar, .app-header.navbar .nav-item .dropdown-toggle > .img-avatar {
+    height: 35px;
+    margin: 0 10px; }
+.app-header.navbar .dropdown-menu {
+    padding-bottom: 0;
+    line-height: 1.5; }
+.app-header.navbar .dropdown-item {
+    min-width: 180px; }
+.logo-header{
+    height: 47px;
+    background: url('../../assets/images/ic_spout360.png') no-repeat center;
+    background-size: 113px;
+}

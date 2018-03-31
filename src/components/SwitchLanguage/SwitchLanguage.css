@@ -1,0 +1,18 @@
+
+.flag-select img {
+    margin-bottom: 12px;
+}
+.flag-select {
+    margin-top: 9px;
+}
+.flag-select .arrow-down, .flag-select .selected--flag--option {
+    color: #ffffff !important;
+}
+.flag-select .flag-options {
+    max-height: 230px !important;
+}
+.switcher-language {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

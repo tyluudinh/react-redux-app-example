@@ -1,0 +1,106 @@
+{
+  "header": {
+    "buyToken": "Mua tokens",
+    "transactions": "Các giao dịch",
+    "profileSetting": "Trang cá nhân",
+    "logout": "Đăng xuất"
+  },
+  "purchaseScreen": {
+    "subDescription": "The averages are valid as of now and are shown for reference only",
+    "paymentMethodTitle": "Payment method and price calculator",
+    "selectPaymentMethod": "Select preferred payment method",
+    "amount": "Tiền",
+    "ethAddress": "Địa chỉ ETH",
+    "checkMyWallet": "Kiểm tra ví của bạn",
+    "checkYourWallet": "Kiểm tra ví của bạn tại địa chỉ {0}",
+    "pleaseUpdateYourETH": "Vui lòng cập nhật địa chỉ ETH!",
+    "updateNow": "Cập nhật ngay",
+    "ethSmartContractTitle": "Send ETH to this address and receive Spout tokens NOW!",
+    "btnCopy": "Copy",
+    "importantText": "DO NOT send ETH directly from any exchange addresses! Choose other payment methods to send from EXCHANGE. Otherwise YOUR TOKENS WILL BE LOST!!!",
+    "makeSureText" : "Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens.",
+    "limitText": "Set gas limit 200,000 GAS and 30 GWEI GAS PRICE",
+    "note": "Use MyEtherWallet, MetaMask, Mist, Tokenlot or other compatible wallets.<br /> Explore transactions on",
+    "subTitle": "The averages are valid as of now and are shown for reference only",
+    "paymentTitle": "Payment method and price calculator",
+    "selectPaymentTitle": "Select preferred payment method",
+    "processing" : "Đang xử lý...!",
+    "btnPay": "Thanh toán",
+    "checkingCard": "Đang kiểm tra thẻ...!",
+    "waitingFee": "Đợi phí...!",
+    "calculatingFee": "Đang tính phí...",
+    "fee": "Phí",
+    "bonusTokens": "Tokens thưởng",
+    "spoutTokensReceive": "Spout Tokens nhận được",
+    "totalTokensReceive": "Tổng số tokens nhận được",
+    "close": "Đóng",
+    "errors": {
+      "blank": "Số tiền và địa chỉ ETH không được để trống"
+    }
+  },
+  "transactionScreen": {
+    "title": "Các giao dịch",
+    "payableAmount": "Tổng số phải trả",
+    "receiveAddress": "Địa chỉ nhận",
+    "bonusRate": "Tỉ lệ thưởng",
+    "status": "Tình trạng",
+    "time": "Thời gian",
+    "emptyText": "Không có dữ liệu"
+  },
+  "profileScreen": {
+    "title": "Thông tin cá nhân",
+    "messageUpdateSuccess": "Cập nhật trang cá nhân thành công",
+    "firstName": "Họ",
+    "lastName": "Tên",
+    "phoneNumber": "Số điện thoại",
+    "ethereumAddress": "Địa chỉ ETH",
+    "saveChange": "Lưu lại",
+    "errors": {
+      "blank": "Địa chỉ ETH không thể để trống!",
+      "titleUpdate": "Cập nhật lỗi",
+      "titleGet": "Lấy thông tin từ server lỗi"
+    }
+  },
+  "notFoundScreen": {
+    "title": "Oh không! <br/> Trang bạn tìm kiếm không tồn tại!"
+  },
+  "userEntry": {
+    "login": {
+      "textSignInFB": "Đăng nhập bằng Facebook",
+      "textSignInGg": "Đăng nhập bằng Google",
+      "textSignIn": "Đăng nhập",
+      "textBottom": "Đăng kí ngay!",
+      "haveAccount": "Bạn chưa có tài khoản?"
+    },
+    "signUp": {
+      "textSignInFB": "Đăng kí bằng Facebook",
+      "textSignInGg": "Đăng kí bằng Google",
+      "textSignIn": "Đăng kí",
+      "textBottom": "Đăng nhập ngay!"
+    },
+    "authenticatedFail": "Đăng nhập lỗi",
+    "password": "Mật khẩu",
+    "signUpFail": "Đăng kí lỗi",
+    "forgotPassword": "Quên mật khẩu?",
+    "findYourAccount": "Tìm lại tài khoản của bạn",
+    "checkingEmail": "Đang kiểm tra email",
+    "emailAddress": "Địa chỉ email",
+    "btnSend": "Gửi",
+    "messageSuccessSendEmail": "Một email đã được gửi tới địa chỉ email của bạn",
+    "messageSuccessResetPassword": "Thiết lập lại thành công! Vui lòng đăng nhập bằng mật khẩu mới",
+    "forgotPasswordModalDes": "Vui lòng nhập địa chỉ email của bạn để chúng tôi tìm lại tài khoản",
+    "titlePopupResetPassword": "Thiết lập lại mật khẩu",
+    "btnReset": "Thiết lập lại",
+    "resetting": "Đang thiếp lập lại...!",
+    "resetCode": "Mã thiết lập",
+    "code": "Mã",
+    "newPassword": "Mật khẩu mới",
+    "errorsResetPassword": {
+      "blank": "Mã thiết lập và mật khẩu mới không thể để trống"
+    },
+    "errorsFindYourAccount": {
+      "blank": "Email không được để trống",
+      "validateEmail": "{email} không phải là một email hợp lệ"
+    }
+  }
+}

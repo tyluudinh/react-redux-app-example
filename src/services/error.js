@@ -1,21 +1,15 @@
-import React from 'react';
+export const getErrors = (error) => {
+  let err = error.message;
+  if (error.response) {
+    err = (error.response.data.error.message);
+  }
+  return err;
+};
 
-import ErrorsDisplay from 'app/components/ErrorsDisplay/ErrorsDisplay';
-
-const unknownError = [{ type: 'unknown' }];
-
-export const getErrors = (errorObject) => {
-  return (errorObject.response) ? ((errorObject.response.data) ? errorObject.response.data.errors : unknownError) : unknownError;
-}
 
 export const getFieldError = (fields, key) => {
-  if (fields && fields[key] && fields[key].errors.length) {
-    return (
-      <ErrorsDisplay fieldError errors={fields[key].errors} />
-    )
-  }
   return null;
-}
+};
 
 export const cleanFieldErrors = (fields) => {
   const result = {};
@@ -25,4 +19,12 @@ export const cleanFieldErrors = (fields) => {
     result[key] = field;
   }
   return result;
+};
+export function handleErrorResponse(error) {
+  let err = error.message;
+  if (error.response) {
+    err = (error.response.data.message);
+  }
+  return err;
 }
+

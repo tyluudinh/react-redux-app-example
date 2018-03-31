@@ -1,0 +1,23 @@
+
+.ant-radio-group {
+    margin-top: 10px;
+}
+label.ant-radio-wrapper {
+    color: #ffffff;
+}
+.sign-up-body {
+    margin-bottom: 90px;
+}
+.sign-up-body > .wrapper {
+    width: 650px;
+}
+.sign-up-body > .wrapper > .w3ls-form {
+    width: 550px;
+}
+.ant-calendar-picker {
+    width: 100%;
+}
+.ant-calendar-picker-input {
+    color: white;
+    background-color: #1c1f30;
+}

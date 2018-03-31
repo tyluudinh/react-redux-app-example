@@ -1,8 +1,8 @@
 {
-  "name": "bnf_web_app",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
+    "antd": "^3.2.3",
     "autoprefixer": "7.1.2",
     "axios": "^0.17.1",
     "babel-core": "6.25.0",
@@ -17,6 +17,7 @@
     "classnames": "^2.2.5",
     "css-loader": "0.28.4",
     "dotenv": "4.0.0",
+    "dotenv-webpack": "^1.5.5",
     "eslint": "4.4.1",
     "eslint-config-react-app": "^2.0.1",
     "eslint-loader": "1.9.0",
@@ -32,6 +33,7 @@
     "lodash": "^4.17.4",
     "moment": "^2.19.1",
     "nprogress": "^0.2.0",
+    "numeral": "^2.0.6",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.6",
@@ -43,18 +45,27 @@
     "react-datepicker": "^0.60.2",
     "react-dev-utils": "^4.1.0",
     "react-dom": "^16.0.0",
+    "react-flags-select": "^1.1.2",
+    "react-g-analytics": "^0.4.2",
     "react-icons": "^2.2.7",
+    "react-input-mask": "^1.2.2",
+    "react-localization": "^1.0.5",
     "react-phone-number-input": "^0.15.2",
+    "react-recaptcha": "^2.3.7",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-select": "^1.0.0-rc.10",
+    "react-social-login": "^3.4.2",
+    "react-stripe-elements": "^1.6.0",
     "react-table": "^6.7.4",
+    "react-text-mask": "^5.2.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-persist": "^5.4.0",
     "redux-saga": "^0.16.0",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",
+    "text-mask-addons": "^3.7.2",
     "to-camel-case": "^1.0.0",
     "to-snake-case": "^1.0.0",
     "url-loader": "0.5.9",
@@ -64,13 +75,11 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "start": "node -r dotenv/config scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "test-override-snapshot": "yarn test -- --u",
-    "coverage": "yarn test -- --coverage",
-    "deploy-dev": "aws s3 sync build/ s3://dev-bnf-web/ --acl public-read --expires 2592000",
-    "deploy-prod": "aws s3 sync build/ s3://bnf-web/ --acl public-read --expires 2592000"
+    "coverage": "yarn test -- --coverage"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -89,7 +98,7 @@
     "testEnvironment": "node",
     "testURL": "http://localhost",
     "transform": {
-      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.(js|jsx)$": "babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
       "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
@@ -97,7 +106,8 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web"
+      "^react-native$": "react-native-web",
+      "^app(.*)$": "<rootDir>/src$1"
     },
     "moduleFileExtensions": [
       "web.js",

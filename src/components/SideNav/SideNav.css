@@ -1,0 +1,29 @@
+.side-nav {
+    border-right: 0.5px solid #ffffff47;
+    padding: 40px 0 10px 20px;
+    height: 100%;
+}
+.avatar__side-nav > .ant-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50px !important;
+}
+.display-name__side-nav {
+    color: #ffffff;
+    margin-top: 10px;
+}
+.list__side-nav {
+    margin-top: 40px;
+    padding-left: 20px;
+}
+.list__side-nav > li {
+    margin-top: 30px;
+}
+.list__side-nav > li > a {
+    color: #ffffff67;
+    font-size: 14px;
+}
+
+.list__side-nav > li.active > a {
+    color: #3b5998;
+}

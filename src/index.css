@@ -3,3 +3,31 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
+.text-center{
+  text-align: center;
+}
+.app-id__spout360 {
+  background-color: #121421;
+  min-height: 100vh;
+}
+.app-body{
+  margin: 40px 10%;
+  border-radius: 2px;
+  background-color: #272a3d47;
+  webkit-box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
+  box-shadow: 10px 3px 66px -19px rgba(0,0,0,0.75);
+}
+.d-inline-flex {
+  display: inline-flex;
+  width: 100%;
+}

@@ -1,0 +1,107 @@
+{
+  "header": {
+    "buyToken": "Buy Token",
+    "transactions": "Transaction",
+    "profileSetting": "Profile Setting",
+    "logout": "Logout"
+  },
+  "tokenExpired": "Token expired! You must login before",
+  "purchaseScreen": {
+    "subDescription": "The averages are valid as of now and are shown for reference only",
+    "paymentMethodTitle": "Payment method and price calculator",
+    "selectPaymentMethod": "Select preferred payment method",
+    "amount": "Amount",
+    "ethAddress": "ETH Address",
+    "checkMyWallet": "Check My Wallet",
+    "checkYourWallet": "Check your wallet at website {0}",
+    "pleaseUpdateYourETH": "Please update your ETH address!",
+    "updateNow": "Update Now",
+    "ethSmartContractTitle": "Send ETH to this address and receive Spout tokens NOW!",
+    "btnCopy": "Copy",
+    "importantText": "DO NOT send ETH directly from any exchange addresses! Choose other payment methods to send from EXCHANGE. Otherwise YOUR TOKENS WILL BE LOST!!!",
+    "makeSureText" : "Please make sure to have a valid ERC20 compatible Ethereum address to receive your tokens.",
+    "limitText": "Set gas limit 200,000 GAS and 30 GWEI GAS PRICE",
+    "note": "Use MyEtherWallet, MetaMask, Mist, Tokenlot or other compatible wallets.<br /> Explore transactions on",
+    "subTitle": "The averages are valid as of now and are shown for reference only",
+    "paymentTitle": "Payment method and price calculator",
+    "selectPaymentTitle": "Select preferred payment method",
+    "processing" : "Processing...!",
+    "btnPay": "Pay",
+    "checkingCard": "Checking card...!",
+    "waitingFee": "Waiting fee...!",
+    "calculatingFee": "Calculating fee...",
+    "fee": "Fee",
+    "bonusTokens": "Bonus Tokens",
+    "spoutTokensReceive": "Spout Tokens Receive",
+    "totalTokensReceive": "Total Tokens Receive",
+    "close": "Close",
+    "errors": {
+      "blank": "Amount and ETH Address cannot empty"
+    }
+  },
+  "transactionScreen": {
+    "title": "Transactions",
+    "payableAmount": "Payable amount",
+    "receiveAddress": "Receiver address",
+    "bonusRate": "Bonus Rate",
+    "status": "Status",
+    "time": "Time",
+    "emptyText": "No data to display"
+  },
+  "profileScreen": {
+    "title": "Personal information",
+    "messageUpdateSuccess": "Update profile success!",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phoneNumber": "Phone number",
+    "ethereumAddress": "Ethereum Address",
+    "saveChange": "Save change",
+    "errors": {
+      "blank": "Ethereum Address cannot be empty!",
+      "titleUpdate": "Update profile fail",
+      "titleGet": "Get profile fail"
+    }
+  },
+  "notFoundScreen": {
+    "title": "Uh oh! <br/> The page you're looking for is not existed!"
+  },
+  "userEntry": {
+    "login": {
+      "textSignInFB": "Sign in with Facebook",
+      "textSignInGg": "Sign in with Google",
+      "textSignIn": "Sign in",
+      "textBottom": "Register now!",
+      "haveAccount": "Don’t have an account?"
+    },
+    "signUp": {
+      "textSignInFB": "Sign up with Facebook",
+      "textSignInGg": "Sign up with Google",
+      "textSignIn": "Sign up",
+      "textBottom": "Login now!"
+    },
+    "password": "Password",
+    "authenticatedFail": "Authenticated fail",
+    "signUpFail": "Sign up fail",
+    "forgotPassword": "Forgot password?",
+    "findYourAccount": "Find Your Account",
+    "checkingEmail": "Checking email",
+    "emailAddress": "Email address",
+    "btnSend": "Send",
+    "messageSuccessSendEmail": "A email sent to your email!",
+    "messageSuccessResetPassword": "Reset successfully! Please login with new password",
+    "forgotPasswordModalDes": "Please enter your email address to search for your account.",
+    "titlePopupResetPassword": "Reset password popup",
+    "btnReset": "Reset",
+    "resetting": "Resetting...!",
+    "resetCode": "Reset Code",
+    "code": "Code",
+    "newPassword": "New password",
+    "errorsResetPassword": {
+      "blank": "Reset code and password can not be blank"
+    },
+    "errorsFindYourAccount": {
+      "blank": "Email can not be blank",
+      "validateEmail": "{email} is not a email valid"
+    }
+  }
+}
